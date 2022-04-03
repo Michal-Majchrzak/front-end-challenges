@@ -20,14 +20,16 @@ body {
 
 .title {
   color: hsl(218, 44%, 22%);
-  font-size: 1.5em;
+  font-size: 1.48em;
   font-weight: 700;
+  margin: 20px 16px 16px 16px;
 }
 
 .subtitle {
   color: hsl(220, 15%, 55%);
-  font-size: 1.1em;
+  font-size: 1.03em;
   font-weight: 400;
+  margin: 16px 16px 24px 16px;
 }
 
 /* Styles by Frontend Mentor */
