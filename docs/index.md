@@ -1,4 +1,4 @@
-## [Frontend Mentor](https://www.frontendmentor.io/) challenges :dart:
+## [Frontend Mentor](https://www.frontendmentor.io/) challenges
 >Repository where i publish my solutions to challenges from `Frontend Mentor`
 
 ### List of challenges:
