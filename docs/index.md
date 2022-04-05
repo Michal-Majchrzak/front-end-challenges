@@ -3,4 +3,4 @@
 
 ### List of challenges:
 #### Newbie:
-- QR code component [ [site](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H) ] [ [solution](https://github.com/Michal-Majchrzak/front-end-challenges/tree/master/newbie/qr-code-component-main) ] [ [live](./live/index.html) ]
+- QR code component [ [site](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H) ] [ [solution](https://github.com/Michal-Majchrzak/front-end-challenges/tree/master/newbie/qr-code-component-main) ] [ [live](../newbie/qr-code-component-main/index.html) ]
