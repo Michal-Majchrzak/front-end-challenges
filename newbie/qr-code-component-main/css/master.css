@@ -1,21 +1,44 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
 body {
   background-color: hsl(212, 45%, 89%);
   font-family: 'Outfit', sans-serif;
   font-size: 15px;
   text-align: center;
+  /* css grid */
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-rows: 20px auto 20px;
 }
 
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 16px;
-  margin: 152px auto 0px;
   max-width: 288px;
   padding: 16px;
+  place-self: center;
 }
 
 .card-header {
   border-radius: 8px;
   max-width: inherit;
+}
+
+.bottom-container {
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  height: 16px;
+}
+
+.container {
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 2;
 }
 
 .title {
@@ -33,5 +56,5 @@ body {
 }
 
 /* Styles by Frontend Mentor */
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center;}
 .attribution a { color: hsl(228, 45%, 44%); }
