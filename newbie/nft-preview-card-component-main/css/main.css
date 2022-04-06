@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    /* Primary colors */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* Neutral colors */
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Font */
+    color: var(--white);
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+html, body {
+  background-color: var(--main-bg);
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-rows: 16px auto 16px;
+}
+
+main {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  place-self: center;
+}
+
+footer {
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+
+hr {
+  color: var(--line);
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+
+h1.title {
+  font-size: 1.22em;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 13px;
+}
+p.text {
+  color: var(--soft-blue);
+  font-size: 18.1px;
+  font-weight: 300;
+  line-height: 25px;
+  margin-bottom: 7px;
+}
+p.eth {
+  color: var(--cyan);
+  font-size: .9em;
+  font-weight: 600;
+}
+p.eth img {
+  margin-right: 7px;
+}
+p.time {
+  color: var(--soft-blue);
+  font-size: .9em;
+  font-weight: 400;
+  justify-self: end;
+  margin-right: 2px;
+}
+p.time img {
+  margin-right: 7px;
+}
+
+p.center {
+  display: flex;
+  align-items: center;
+}
+
+div.author-container {
+  display: grid;
+  align-items: center;
+  grid-auto-flow: column;
+  grid-template-columns: 49px auto;
+}
+
+div.time-container {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+}
+
+p.author {
+  color: var(--soft-blue);
+  font-size: .91em;
+  font-weight: 300;
+}
+
+div.author-container img {
+  border-color: var(--white);
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 1px;
+  max-width: 31px;
+}
+p.author a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 12.5px;
+  padding: 25px;
+  max-width: 300px;
+}
+
+.card-image {
+  border-radius: 6px;
+  max-width: inherit;
+}
+
+/* Frontend Mentor */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
