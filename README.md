@@ -4,3 +4,4 @@
 ### :desktop_computer: [ [Project Page](https://michal-majchrzak.github.io/front-end-challenges/) ]
 #### Newbie:
 - QR code component [ [Live version](https://michal-majchrzak.github.io/front-end-challenges/newbie/qr-code-component-main/index.html) ]
+- NFT Preview card component [ [Live version](https://michal-majchrzak.github.io/front-end-challenges/newbie/nft-preview-card-component-main/index.html) ]
