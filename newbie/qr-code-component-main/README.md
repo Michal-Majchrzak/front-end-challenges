@@ -4,7 +4,11 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![Screenshot of completed challenge](./images/screenshot.png)
+#### Desktop
+![Screenshot of completed challenge](./images/screenshot-desktop.png)
+
+#### Mobile
+![Mobile screenshot](./images/screenshot-mobile.png)
 
 ### Built with
 
@@ -15,6 +19,13 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 - Basics of CSS Grid.
 - Usage of Firefox developer tools for testing how page is displayed on mobile devices.
+
+### Continued development
+
+- Find correct dimensions for border radius of card and code image (preferably percentage)
+- Add soft shadow to the card
+- Replace (where possible px units with other relative units)
+- Try to better match solution fonts size with actual design
 
 ### Useful resources
 
