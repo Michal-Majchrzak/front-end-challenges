@@ -1,0 +1,67 @@
+// colors
+$clr-white: hsl(0, 0%, 100%)
+$clr-light-gray: hsl(212, 45%, 89%)
+$clr-grayish-blue: hsl(220, 15%, 55%)
+$clr-dark-blue: hsl(218, 44%, 22%)
+
+// font
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap')
+@mixin default-font
+  color: $clr-grayish-blue
+  font-family: 'Outfit', sans-serif
+  font-size: 15px
+  font-weight: 400
+
+html body
+  @include default-font
+  margin: 0
+  padding: 0
+
+body
+  display: grid
+  min-height: 100vh
+  place-items: center
+
+  background-color: $clr-light-gray
+
+main
+  display: grid
+
+  background-color: $clr-white
+  border-radius: 16px
+  max-width: 288px
+  padding: 16px
+
+  img
+    border-radius: .5em
+    max-width: inherit
+  // h1 and p margins - TODO: find way to remove px units
+  h1
+    color: $clr-dark-blue
+    font-size: 1.4rem
+    font-weight: 700
+    margin-top: 24px
+    margin-bottom: 8px
+  p
+    font-size: .95rem
+    margin-top: 8px
+    margin-bottom: 24px
+  h1, p
+    padding:
+      left: 16px
+      right: 16px
+    text-align: center
+    
+footer
+  bottom: 0
+  position: fixed
+  width: 100%
+
+  color: black
+
+  .attribution
+    font-size: 11px
+    text-align: center
+
+  .attribution a
+    color: hsl(228, 45%, 44%)
