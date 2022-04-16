@@ -3,12 +3,15 @@ $clr-page-background: hsl(225, 100%, 94%)
 $clr-banner-background: hsl(225, 100%, 98%)
 $clr-dark-text: hsl(223, 47%, 23%)
 $clr-light-text: hsl(224, 23%, 55%)
+$clr-button-primary: hsl(245, 75%, 52%)
 
 //General
 html
   background-color: $clr-page-background
   font-family: 'Red Hat Display', sans-serif
   color: $clr-light-text
+  margin: 0
+  padding: 0
 
 body
   display: grid
@@ -16,6 +19,8 @@ body
   place-items: center
 
   font-size: 1.250rem
+  margin: 0
+  padding: 0
 
 //Card styles
 .card
@@ -44,17 +49,46 @@ body
   padding: 0 1.067em
 
 .banner
+  display: grid
+  grid-template-columns: 1fr 2fr 1fr
+  align-items: center
   background-color: $clr-banner-background
   font-size: 0.750em
   margin: 1.535em 1.6em 1.6em 1.6em
   // TEMP: min-height
   min-height: 82px
 
+  img
+    justify-self: center
   b
     font-weight: 700
 
   p
-    display: inline
+    //display: inline
+    justify-self: start
+
+.btn-primary
+  display: block
+  color: white
+  font-family: "Red Hat Display", sans-serif
+  font-weight: 900
+  background-color: $clr-button-primary
+  box-sizing: border-box
+  border-style: none
+  padding: 0.967em
+  margin: 0 1.6em
+  width: 279px
+  font-size: 0.750em
+
+.btn-secondary
+  color: $clr-light-text
+  padding: 16px
+  background: none
+  border: none
+  margin: 16px
+  font-family: "Red Hat Display", sans-serif
+  font-weight: 900
+  font-size: 0.750em
 
 
 //Widescreen
