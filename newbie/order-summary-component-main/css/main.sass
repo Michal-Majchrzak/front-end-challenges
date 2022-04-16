@@ -1,0 +1,78 @@
+/*rev. 5*/
+$clr-page-background: hsl(225, 100%, 94%)
+$clr-banner-background: hsl(225, 100%, 98%)
+$clr-dark-text: hsl(223, 47%, 23%)
+$clr-light-text: hsl(224, 23%, 55%)
+
+//General
+html
+  background-color: $clr-page-background
+  font-family: 'Red Hat Display', sans-serif
+  color: $clr-light-text
+
+body
+  display: grid
+  min-height: 100vh
+  place-items: center
+
+  font-size: 1.250rem
+
+//Card styles
+.card
+  background-color: white
+  max-width: 16.350em
+
+  text-align: center
+
+.card-header-image
+  display: block
+  max-width: inherit
+  margin: 0 auto 0 auto
+
+.card-title
+  color: $clr-dark-text
+  font-size: 1.1em
+  font-weight: 900
+
+  margin-top: 1.410em
+  margin-bottom: 0.730em
+
+.card-body
+  font-size: 0.750em
+  line-height: 1.667em
+  margin: 1.067em 1.6em
+  padding: 0 1.067em
+
+.banner
+  background-color: $clr-banner-background
+  font-size: 0.750em
+  margin: 1.535em 1.6em 1.6em 1.6em
+  // TEMP: min-height
+  min-height: 82px
+
+  b
+    font-weight: 700
+
+  p
+    display: inline
+
+
+//Widescreen
+@media only screen and (min-width: 768px)
+  .card
+    max-width: 22.5em
+
+  .card-title
+    font-size: 1.4em
+    margin-top: 1.575em
+    margin-bottom: 0.5em
+
+  .card-body
+    font-size: 0.800em
+    margin: 0.875em 1.6em
+
+  .banner
+    // TEMP: min-height
+    min-height: 98px
+    font-size: 0.800em
+    margin: 1.315em 3em 2em
