@@ -1,0 +1,32 @@
+:root {
+  --color-background-main: hsl(30, 38%, 92%);
+  --color-background-card: hsl(0, 0%, 100%);
+}
+body {
+  background-color: var(--color-background-main);
+}
+
+.card {
+  background-color: var(--color-background-card);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.prices {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-header > img {
+  width: 100%;
+  object-fit: contain;
+}
