@@ -125,3 +125,44 @@ body {
   font-weight: 700;
   padding-right: 1px;
 }
+
+/* Desktop */
+@media screen and (min-width: 602px) {
+  .card {
+    max-width: 600px;
+    max-height: 450px;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+  }
+
+  .card-header {
+    max-width: 300px;
+  }
+
+  .card-header > img {
+    height: 100%;
+    width: auto;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: var(--card-border-radius);
+  }
+
+  .card-content {
+    padding: 32px;
+    gap: 20px;
+  }
+
+  .prices {
+    flex-grow: 2;
+    gap: 19px;
+    padding: 0; 
+  }
+
+  .new-price {
+    min-height: 2.3125rem;
+  }
+
+  .old-price {
+    margin-bottom: 5px;
+  }
+}
