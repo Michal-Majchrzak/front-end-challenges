@@ -1,0 +1,183 @@
+:root {
+  --color-main-background: hsl(30, 38%, 92%);
+  --color-card-background: hsl(0, 0%, 100%);
+  --color-text-main: hsl(212, 21%, 14%);
+  --color-text-secondary: hsl(228, 12%, 48%);
+  --color-primary: hsl(158, 36%, 37%);
+  --color-primary-dark: hsl(158, 36%, 18%);
+  --card-border-radius: 8px;
+
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--color-main-background);
+  display: flex;
+  height: 100vh;
+}
+
+.text-main {
+  color: var(--color-text-main);
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.card {
+  background-color: var(--color-card-background);
+  max-width: 343px;
+  margin: auto;
+  border-radius: var(--card-border-radius)
+}
+
+.card-header > picture > img {
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  border-top-left-radius: var(--card-border-radius);
+  border-top-right-radius: var(--card-border-radius);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 12px;
+}
+
+.card-content > h2 {
+  order: -1;
+}
+
+.item-name {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.item-category {
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .315rem;
+}
+
+.paragraph {
+  font-size: .875rem;
+  line-height: 1.4375rem;
+  padding: 4px 0;
+}
+
+.prices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 8px 0;
+}
+
+.new-price {
+  color: var(--color-primary);
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.old-price {
+  font-size: .8125rem;
+  text-decoration: line-through;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 0;
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: var(--card-border-radius);
+}
+
+.btn:hover {
+  background-color: var(--color-primary-dark);
+  cursor: pointer;
+}
+
+.btn i {
+  width: 1.125rem;
+  height: 1rem;
+  display: flex;
+}
+
+.btn img {
+  display: block;
+  margin: auto;
+}
+
+.btn-text {
+  color: var(--color-card-background);
+  font-size: .875rem;
+  font-weight: 700;
+  padding-right: 1px;
+}
+
+/* Desktop */
+@media screen and (min-width: 600px) {
+  .card {
+    max-width: 600px;
+    max-height: 450px;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+  }
+
+  .card-header {
+    max-width: 300px;
+  }
+
+  .card-header > picture > img {
+    height: 100%;
+    width: auto;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: var(--card-border-radius);
+  }
+
+  .card-content {
+    padding: 32px;
+    gap: 20px;
+  }
+
+  .prices {
+    flex-grow: 2;
+    gap: 19px;
+    padding: 0; 
+  }
+
+  .new-price {
+    min-height: 2.3125rem;
+  }
+
+  .old-price {
+    margin-bottom: 5px;
+  }
+}
+
+.challenge-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  margin: 0 auto;
+}
+/* frontendmentor.io styles */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

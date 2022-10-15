@@ -4,16 +4,20 @@
 			<meta charset="utf-8" />
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<title>Frontend Mentor | Product preview card component</title>
+			<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 			<link rel="preconnect" href="https://fonts.googleapis.com">
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 			<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-			<link rel="stylesheet" href="style.css" type="text/css" />
+			<link rel="stylesheet" href="./css/style.css" type="text/css" />
 	</head>
 	<body>
 	  <article class="card">
 	    <header class="card-header">
-				<!-- <img src="images/image-product-mobile.jpg"> mobile -->
-				<img src="images/image-product-desktop.jpg" alt="">
+	      <picture>
+	        <source media="(min-width: 600px)" srcset="./images/image-product-desktop.jpg" alt="perfume bottle">
+	        <source media="(min-width: 300px)" srcset="./images/image-product-mobile.jpg" alt="perfume bottle">
+	        <img src="images/image-product-desktop.jpg" alt="perfume bottle">
+	      </picture>
 	    </header>
 	    <main class="card-content">
 	      <h1 class="item-name text-main">Gabrielle Essence Eau De Parfum</h1>
@@ -29,5 +33,10 @@
 	      </button>
 	    </main>
 	  </article>
+	  <footer class="challenge-footer">
+	    <div class="attribution">
+	      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Michal Majchrzak</a>.
+	    </div>
+	  </footer>
 	</body>
 </html>
