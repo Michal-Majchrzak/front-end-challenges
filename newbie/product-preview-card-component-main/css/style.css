@@ -34,6 +34,20 @@ main {
   font-weight: 500;
 }
 
+.sr-only {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  padding: 0;
+  margin: -1px;
+}
+
 .card {
   background-color: var(--color-card-background);
   max-width: 343px;
@@ -55,16 +69,13 @@ main {
   gap: 12px;
 }
 
-.card-content > h2 {
-  order: -1;
-}
-
 .item-name {
   font-size: 2rem;
   line-height: 2rem;
 }
 
 .item-category {
+  order: -1;
   font-size: .75rem;
   text-transform: uppercase;
   letter-spacing: .315rem;
@@ -79,20 +90,23 @@ main {
 .prices {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  flex-grow: 2;
+  align-items: flex-start;
   gap: 20px;
   padding: 8px 0;
 }
 
-.new-price {
+.price {
   color: var(--color-primary);
   font-size: 2rem;
   line-height: 2rem;
 }
 
-.old-price {
+.previous-price {
   font-size: .8125rem;
+  line-height: 1.125rem;
   text-decoration: line-through;
+  margin-top: 7px;
 }
 
 .btn {
@@ -156,17 +170,8 @@ main {
   }
 
   .prices {
-    flex-grow: 2;
     gap: 19px;
-    padding: 0; 
-  }
-
-  .new-price {
-    min-height: 2.3125rem;
-  }
-
-  .old-price {
-    margin-bottom: 5px;
+    padding: 5px 0;
   }
 }
 
