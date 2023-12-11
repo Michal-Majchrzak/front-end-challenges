@@ -1,0 +1,96 @@
+:root {
+  --color-background: hsl(0, 0%, 95%);
+  --color-sedan: hsl(31, 77%, 52%);
+  --color-suv: hsl(184, 100%, 22%);
+  --color-luxury: hsl(179, 100%, 13%);
+  --color-transparent-white: hsla(0, 0%, 100%, 0.75);
+  font-size: 16px;
+}
+
+/* class to visually hide element but still been accessible by screen readers */
+.screen-reader {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.sedans {
+  background-color: var(--color-sedan);
+  color: var(--color-sedan);
+}
+
+.suvs {
+  background-color: var(--color-suv);
+  color: var(--color-suv);
+}
+
+.luxury {
+  background-color: var(--color-luxury);
+  color: var(--color-luxury);
+}
+
+article, article > * {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  margin: 0;
+}
+
+article {
+  max-height: inherit;
+  padding: 48px;
+}
+
+img {
+  display: block;
+  margin-bottom: 2.25rem;
+}
+
+h2 {
+  color: var(--color-background);
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 40px;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+p {
+  color: var(--color-transparent-white);
+  line-height: 25px;
+  margin-bottom: 5.2rem;
+}
+
+/*  button in normal state inherits text color from its parent, in this case
+    article element with class where color was defined to be same as background.
+    Note: see classes .sedan .suv .luxury
+*/
+button {
+  background-color: var(--color-background);
+  border: 2px solid var(--color-background);
+  border-radius: 24px;
+  color: inherit;
+  height: 48px;
+  width: 146px;
+  padding: 0;
+  padding-bottom: 2px;
+}
+
+button:hover {
+  background-color: inherit;
+  color: var(--color-transparent-white);
+  cursor: pointer;
+}
+
+
+
+
+/* for media query */
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  max-height: 500px;
+  max-width: 920px;
+}

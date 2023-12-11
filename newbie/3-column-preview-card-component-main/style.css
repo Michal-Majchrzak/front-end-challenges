@@ -1,0 +1,80 @@
+:root {
+  --color-background: hsl(0, 0%, 95%);
+  --color-sedan: hsl(31, 77%, 52%);
+  --color-suv: hsl(184, 100%, 22%);
+  --color-luxury: hsl(179, 100%, 13%);
+  --color-transparent-white: hsla(0, 0%, 100%, 0.75);
+}
+
+article {
+  /* layout */
+  padding: 3rem;
+}
+
+article button {
+  /* text appearance */
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 0.9375rem;
+  color: inherit;
+  /* appearance */
+  background-color: var(--color-background);
+  border: 2px solid var(--color-background);
+  border-radius: 1.5rem;
+  height: 3rem;
+  width: 9.125rem;
+}
+
+article button:hover {
+  /* text appearance */
+  color: var(--color-transparent-white);
+  /* appearance */
+  background-color: transparent;
+  cursor: pointer;
+}
+
+article h2 {
+  /* text appearance */
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.5rem;
+  color: var(--color-background);
+  text-transform: uppercase;
+  /* layout */
+  margin: 0 0 1.5rem;
+}
+
+article img {
+  /* layout */
+  display: block;
+  margin: 0 0 2.25rem;
+}
+
+article p {
+  /* text appearance */
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 0.9375rem;
+  color: var(--color-transparent-white);
+  line-height: 1.5625rem;
+  /* Layout */
+  margin: 0 0 5.2rem;
+}
+
+.sedan {
+  /* appearance */
+  background-color: var(--color-sedan);
+  /* text appearance */
+  color: var(--color-sedan);
+}
+
+.suv {
+  /* appearance */
+  background-color: var(--color-suv);
+  /* text appearance */
+  color: var(--color-suv);
+}
+
+.luxury {
+  /* appearance */
+  background-color: var(--color-luxury);
+  /* text appearance */
+  color: var(--color-luxury);
+}
