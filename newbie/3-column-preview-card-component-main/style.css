@@ -55,7 +55,33 @@ article p {
   color: var(--color-transparent-white);
   line-height: 1.5625rem;
   /* Layout */
-  margin: 0 0 5.2rem;
+  margin: 0 0 1.5625rem;
+}
+
+body {
+  /* layout */
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  /* layout */
+  margin: 5.5rem 1.5rem 0.5rem;
+  max-width: 19rem;
+}
+
+section article:first-of-type {
+  /* appearance */
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+section article:last-of-type {
+  /* appearance */
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 
 .sedan {
@@ -77,4 +103,31 @@ article p {
   background-color: var(--color-luxury);
   /* text appearance */
   color: var(--color-luxury);
+}
+
+@media screen and (min-width: 800px) {
+  article p {
+    /* layout */
+    margin: 0 0 5.1875rem;
+  }
+
+  section {
+    /* layout */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* value for margin-top 171px is only used to match Frontend Mentor design screenshot
+    in general I would propably want to use value like .5rem or 0 */
+    margin: 171px auto 0.5rem;
+    max-width: 57.5rem;
+  }
+
+  section article:first-of-type {
+    /* appearance */
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  
+  section article:last-of-type {
+    /* appearance */
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
 }
