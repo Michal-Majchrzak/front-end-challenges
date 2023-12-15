@@ -65,6 +65,13 @@ body {
   margin: 0;
 }
 
+footer {
+  /* layout */
+  bottom: 0;
+  position: fixed;
+  width: 100vw;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -93,6 +100,15 @@ section article:last-of-type {
   overflow: hidden;
   top: 0;
   left: 0;
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
 }
 
 .sedan {
