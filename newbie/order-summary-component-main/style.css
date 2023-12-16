@@ -1,0 +1,72 @@
+/* font-family: 'Red Hat Display', sans-serif; */
+
+:root {
+  --color-background: hsl(225, 100%, 94%);
+  --color-dark-blue: hsl(223, 47%, 23%);
+  --color-desaturated-blue: hsl(224, 23%, 55%);
+}
+
+article {
+  /* appearance */
+  background-color: #FFF;
+  /* layout */
+  margin: auto 1.5rem;
+}
+
+article img {
+  display: block;
+  width: 100%;
+}
+
+article h2 {
+  /* text appearance */
+  color: var(--color-dark-blue);
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1.375rem;
+  font-weight: 900;
+  text-align: center;
+  /* layout */
+  margin: 0;
+}
+
+article header {
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+article .article-body {
+  /* layout */
+  padding: 0 1.5rem;
+}
+
+article p {
+  /* text appearance */
+  color: var(--color-desaturated-blue);
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5625rem;
+  text-align: center;
+  padding: 0 1rem;
+
+  margin: 0;
+}
+
+body {
+  /* appearance */
+  background-color: var(--color-background);
+  /* layout */
+  height: 100vh;
+  margin: 0;
+}
+
+main {
+  /* layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
