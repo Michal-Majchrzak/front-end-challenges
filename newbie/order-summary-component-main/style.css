@@ -2,8 +2,10 @@
 
 :root {
   --color-background: hsl(225, 100%, 94%);
+  --color-very-pale-blue: hsl(225, 100%, 98%);
   --color-dark-blue: hsl(223, 47%, 23%);
   --color-desaturated-blue: hsl(224, 23%, 55%);
+  --color-bright-blue: hsl(245, 75%, 52%);
 }
 
 article {
@@ -14,6 +16,18 @@ article {
   flex-direction: column;
   gap: 1px;
   margin: auto 1.5rem;
+}
+
+article button {
+  /* appearance */
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+}
+
+article button.empty {
+  padding: 0;
 }
 
 article img {
@@ -51,7 +65,7 @@ article p {
   /* text appearance */
   color: var(--color-desaturated-blue);
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 500;
   line-height: 1.5625rem;
   text-align: center;
@@ -59,17 +73,48 @@ article p {
   margin: 0;
 }
 
-#price {
-  background-color: hsl(225, 100%, 98%); /* very pale blue */
+article .sub-plan-summary {
+  /* text appearance */
+  color: var(--color-desaturated-blue);
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  /* appearance */
+  background-color: var(--color-very-pale-blue);
+  /* layout */
+  display: grid;
+  grid-template-columns: 3rem auto auto;
+  column-gap: 1.25rem;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+    "icon plan link"
+    "icon price link";
+  align-items: center;
   padding: 1rem;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
 }
 
-#price img {
-  display: inline-block;
+.sub-plan-summary::before {
+  /* appearance */
+  content: "";
+  background-image: url(./images/icon-music.svg);
+  background-repeat: no-repeat;
   width: 3rem;
+  height: 3rem;
+  /* layout */
+  grid-area: icon;
+}
+
+.text-black {
+  color: var(--color-dark-blue);
+  font-weight: 900;
+}
+
+.sub-plan-summary a {
+  /* text appearance */
+  color: var(--color-bright-blue);
+  /* layout */
+  grid-area: link;
+  justify-self: right;
 }
 
 body {
