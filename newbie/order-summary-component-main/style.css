@@ -19,10 +19,19 @@ article {
 }
 
 article button {
+  /* text appearance */
+  color: #FFF;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1lh;
   /* appearance */
+  background-color: var(--color-bright-blue);
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 0.625rem;
   padding: 1rem;
+  /* layout */
+  box-sizing: border-box;
 
 }
 
