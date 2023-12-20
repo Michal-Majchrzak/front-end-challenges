@@ -6,16 +6,20 @@
   --color-dark-blue: hsl(223, 47%, 23%);
   --color-desaturated-blue: hsl(224, 23%, 55%);
   --color-bright-blue: hsl(245, 75%, 52%);
+  --color-bright-blue-hover: color-mix(in srgb, var(--color-bright-blue) 70%, #FFF 30%);
 }
 
 article {
   /* appearance */
   background-color: #FFF;
+  border-radius: 1.25rem;
+  box-shadow: 0 1rem 2rem 0 hsla(224, 23%, 55%, 25%);
   /* layout */
   display: flex;
   flex-direction: column;
   gap: 1px;
   margin: auto 1.5rem;
+  /* max-width: 28.125rem; */
 }
 
 article button {
@@ -30,13 +34,31 @@ article button {
   border: none;
   border-radius: 0.625rem;
   padding: 1rem;
+  box-shadow: 0 1.5rem 1rem -0.75rem hsla(245, 75%, 52%, 25%);
   /* layout */
   box-sizing: border-box;
+}
 
+article button:hover {
+  /* appearance */
+  background-color: var(--color-bright-blue-hover);
+  cursor: pointer;
 }
 
 article button.empty {
+  /* text appearance */
+  color: var(--color-desaturated-blue);
+  /* appearance */
+  background-color: transparent;
   padding: 0;
+  box-shadow: none;
+}
+
+article button.empty:hover {
+  /* text appearance */
+  color: var(--color-dark-blue);
+  /* appearance */
+  cursor: pointer;
 }
 
 article img {
@@ -62,12 +84,16 @@ article header {
   gap: 2rem;
 }
 
+article header img {
+  border-radius: 1.25rem 1.25rem 0 0;
+}
+
 article .article-body {
   /* layout */
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.5rem 2.125rem;
 }
 
 article p {
@@ -90,6 +116,7 @@ article .sub-plan-summary {
   font-weight: 500;
   /* appearance */
   background-color: var(--color-very-pale-blue);
+  border-radius: 0.5rem;
   /* layout */
   display: grid;
   grid-template-columns: 3rem auto auto;
@@ -121,18 +148,38 @@ article .sub-plan-summary {
 .sub-plan-summary a {
   /* text appearance */
   color: var(--color-bright-blue);
+  font-weight: 700;
   /* layout */
   grid-area: link;
   justify-self: right;
 }
 
+.sub-plan-summary a:hover {
+  /* text appearance */
+  color: var(--color-bright-blue-hover);
+  text-decoration: none;
+}
+
 body {
   /* appearance */
+  background-image: url(./images/pattern-background-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
   background-color: var(--color-background);
   /* layout */
   height: 100vh;
   margin: 0;
 }
+
+/* header::before {
+  content: "";
+  display: block;
+  background-image: url(./images/illustration-hero.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 10rem;
+  border-radius: 1.25rem 1.25rem 0 0;
+} */
 
 main {
   /* layout */
