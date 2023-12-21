@@ -1,0 +1,145 @@
+:root {
+  --color-main-background: hsl(217, 54%, 11%);
+  --color-card-background: hsl(216, 50%, 16%);
+  --color-header-text: hsl(0, 0%, 100%);
+  --color-paragraph-text: hsl(215, 51%, 70%);
+  --color-hover-state: hsl(178, 100%, 50%);
+  --color-line: hsl(215, 32%, 27%);
+  --card-border-radius: 16px;
+  --bar-text-size: 0.9375rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text-heading {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 1.375rem;
+  line-height: 1.135;
+  color: var(--color-header-text);
+}
+
+.text-paragraph {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.625;
+  letter-spacing: calc(1rem * 0.002);
+  color: var(--color-paragraph-text);
+}
+
+.bar-text {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: var(--bar-text-size);
+  line-height: 1rem;
+}
+
+.text-price {
+  letter-spacing: calc(var(--bar-text-size) * 0.015);
+  color: var(--color-hover-state);
+  /* line-height: 1rem; */
+}
+
+.text-time {
+  letter-spacing: calc(var(--bar-text-size) * 0.011);
+  color: var(--color-paragraph-text);
+  font-weight: 400;
+}
+
+main {
+  background-color: var(--color-main-background);
+  height: 100vh;
+  display: flex;
+}
+
+.card {
+  margin: auto;
+  max-width: 327px;
+  border-radius: var(--card-border-radius);
+  padding: 24px;
+  background-color: var(--color-card-background);
+  box-shadow: 0 24px 64px 0 hsla(0, 0%, 0%, .25);
+}
+
+.card-header > img {
+  display: block;
+  width: 100%;
+  border-radius: calc(var(--card-border-radius) / 2);
+}
+
+.card-body {
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.price-time-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 0;
+}
+
+.bar-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.bar-item img {
+  display: block;
+}
+
+.text-time i {
+  padding-right: 1px;
+}
+
+.card hr {
+  border: 0ch;
+  border-top: 1px solid var(--color-line);
+}
+
+.card-footer {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.card-footer .avatar {
+  display: block;
+  max-width: 33px;
+  border: 1px solid var(--color-header-text);
+  border-radius: 50%;
+}
+
+.author {
+  margin: auto 0;
+  font-weight: 300;
+}
+
+.author a {
+  color: var(--color-header-text);
+  padding: 0 1px;
+  text-decoration: none;
+}
+
+.challenge-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+}
+/* frontendmentor.io styles */
+.attribution {
+  color: #eee; /* added for better contrast */
+  font-size: 11px;
+}
+.attribution a {
+  /* color: hsl(228, 45%, 44%); - original color replaced for better contrast with background */
+  color: hsl(228, 45%, 78%);
+}

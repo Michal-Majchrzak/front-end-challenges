@@ -2,39 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <main>
-    <div class="card">
-      <img class="card-image" src="./images/image-equilibrium.jpg" alt="equilibrium-image">
-      <h1 class="title">Equilibrium #3429</h1>
-      <p class="text">Our Equilibrium collection promotes balance and calm.</p>
-      <div class="time-container">
-        <p class="eth center">
-          <img src="./images/icon-ethereum.svg" alt="ethereum-icon">
-          0.041 ETH
-        </p>
-        <p class="time center">
-          <img src="./images/icon-clock.svg" alt="clock-icon">
-          3 days left
-        </p>
+    <article class="card">
+      <header class="card-header">
+        <img src="./images/image-equilibrium.jpg" alt="">
+      </header>
+      <div class="card-body">
+        <h1 class="text-heading">Equilibrium #3429</h1>
+        <p class="text-paragraph">Our Equilibrium collection promotes balance and calm.</p>
+        <div class="price-time-bar">
+          <span class="bar-item bar-text text-price">
+            <i><img src="./images/icon-ethereum.svg" alt=""></i>
+            0.041 ETH
+          </span>
+          <span class="bar-item bar-text text-time">
+            <i><img src="./images/icon-clock.svg" alt=""></i>
+            3 days left
+          </span>
+        </div>
+        <hr>
       </div>
-      <hr>
-      <div class="author-container">
-        <img src="./images/image-avatar.png" alt="avatar-image">
-        <p class="author">
-          Creation of <a href="#">Jules Wyvern</a>
-        </p>
-    </div>
+      <footer class="card-footer">
+        <img class="avatar" src="./images/image-avatar.png" alt="">
+        <span class="author bar-text text-time">Creation of <a href="#">Jules Wyvern</a></span>
+      </footer>
+    </article>
   </main>
-  <footer>
+  <footer class="challenge-footer">
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://michal-majchrzak.github.io/front-end-challenges/">Michał Majchrzak</a>.
